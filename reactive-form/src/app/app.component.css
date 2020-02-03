@@ -1,0 +1,24 @@
+h1 {
+	grid-area: t;
+	text-align: center;
+}
+
+.container {
+	border: 1px solid black;
+	border-radius: 5px;
+	display: grid;
+	grid-template-columns: 50px 1fr 50px;
+	grid-template-rows: 2 auto;
+	grid-template-areas:
+		't t t'
+		'. form .';
+	grid-gap: .5em;
+	padding: 10px;
+}
+
+.form{
+	grid-area: form;
+	display: grid;
+	grid-gap: .25em;
+	
+}
